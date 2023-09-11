@@ -4,7 +4,7 @@ import VLibras from "@djpfs/react-vlibras";
 function App() {
   return (
     <div>
-      <VLibras forceOnload />
+      <VLibras forceOnload={true} />
       <h1>Meu exemplo de uso do vlibras</h1>
       <button>{"Enviar"}</button>
 
