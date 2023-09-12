@@ -1,10 +1,14 @@
 import "./App.css";
 import VLibras from "@djpfs/react-vlibras";
 
+import images from "./assets";
+
 function App() {
+  const { gatinho } = images;
+
   return (
     <div>
-      <VLibras forceOnload />
+      <VLibras forceOnload={true} />
       <h1>Meu exemplo de uso do vlibras</h1>
       <button>{"Enviar"}</button>
 
@@ -13,6 +17,26 @@ function App() {
         uma lista de 50 palavras aleatórias. Lembre-se de que a formatação e o
         estilo podem ser ajustados de acordo com suas preferências.
       </p>
+      <div>
+        <img
+          src={gatinho}
+          alt="gato"
+          width={200}
+          height={200}
+          style={{ borderRadius: "50%", border: "1px solid black" }}
+        />
+        <img
+          width={200}
+          height={200}
+          style={{
+            borderRadius: "50%",
+            border: "1px solid black",
+            backgroundColor: "red",
+          }}
+          alt="vermelho"
+          disabled={true}
+        />
+      </div>
 
       <p>Montanha</p>
       <p>Livro</p>
