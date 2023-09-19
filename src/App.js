@@ -25,17 +25,6 @@ function App() {
           height={200}
           style={{ borderRadius: "50%", border: "1px solid black" }}
         />
-        <img
-          width={200}
-          height={200}
-          style={{
-            borderRadius: "50%",
-            border: "1px solid black",
-            backgroundColor: "red",
-          }}
-          alt="vermelho"
-          disabled={true}
-        />
       </div>
 
       <p>Montanha</p>
